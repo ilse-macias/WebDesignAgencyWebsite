@@ -1,0 +1,106 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+/*Span*/
+#text{
+  color: red;
+}
+/*Image*/
+.tile-image{
+  height: 200px;
+  margin: 50px;
+  border-radius: 20px;
+}
+
+/*Display the width and/or height of a div*/
+.card {
+  width: 40%;
+}
+
+/*divs*/
+.right{
+  float: right;
+  background-color: violet;
+}
+
+.left{
+  float: left;
+  background-color: aqua;
+}
+
+/*Div > Image*/
+.left .tile-image{
+  float: left;
+}
+
+.right .tile-image{
+  float: right;
+} 
+
+p{
+  text-align: justify;
+  padding: 0 50px;
+}
+
+.card-title{
+  text-align: left;
+  margin-top: 50px;
+  padding-left: 50px;
+}
+
+
+@media (min-width: 350px) and (max-width:680px) {
+  body{
+    background-color: powderblue;
+  }
+
+  .logo{
+    width: 150px;
+    margin: 0 50px 0 70px;
+    /*Center logo?*/
+  }
+
+  h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /*Include: img, h2, p*/
+  .card {
+    width: 100%; /*the DIV size in the screen resolution*/
+    display: block;
+    margin-bottom: 50px;
+    text-align: justify;
+  }
+
+  /*For both images*/
+  .card img {
+    margin-bottom: 10px;
+    width: 80%;
+    height: 70%;
+    margin: 30px 30px 15px 30px;
+    display: inline;
+  }
+
+  .card-title, footer{
+    text-align: center;
+    padding-left: 5px;
+   }
+}
